@@ -1,0 +1,60 @@
+@media screen and (max-width: 992px) {
+    .row-landing {
+        display: flex;
+        flex-direction: column;
+    }
+    .services {
+        justify-content: space-evenly !important;
+    }
+    .custom-fs-2 {
+        font-size: 30px;
+    }
+
+    .landing-text {
+        color: #333;
+        margin: 0%;
+        margin-bottom: 5px;
+        text-shadow: #33333356 0px 4px 4px;
+        font-weight: 700;
+        font-size: 1.2rem !important;
+    }
+
+    .left-landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/background-1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-content: center;
+        font-size: 1rem;
+        font-family: Montserrat;
+        padding: 0% !important;
+        height: 60vh !important;
+    }
+    .right-landing {
+        background-image: url(./images/logoLanding.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh !important;
+    }
+    .buttons {
+        padding-left: 0% !important;
+    }
+    .custom-col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .orientation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flexing {
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+}

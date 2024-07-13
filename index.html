@@ -1,12 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Aljamer | Portfolio</title>
 </head>
+
 <body>
-    Portfolio
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff00;" id="first-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+                aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas-header d-flex flex-row">
+                <a class="navbar-brand m-0 d-flex" href="#">
+                    <img class="logo img-shadow-b" src="images/sm-logo.png" alt="logo">
+                    <p class="bebas m-0 align-content-center ms-2 me-2">|</p>
+                    <p class="bebas m-0 align-content-center">ALJAMER</p>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse flexing" id="navbarTop">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark ccc-bg fixed-top" id="second-navbar" style="display: none;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom"
+                aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas-header d-flex flex-row">
+                <a class="navbar-brand m-0 d-flex" href="#">
+                    <img class="logo img-shadow" src="images/sm-logo.png" alt="logo">
+                    <p class="bebas m-0 align-content-center ms-2 me-2">|</p>
+                    <p class="bebas m-0 align-content-center">ALJAMER</p>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse flexing" id="navbarBottom">
+                <ul class="navbar-nav" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas active" href="#navbarNav">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="montserrat-alternates-regular fs-7 nav-link bebas" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- LANDING SECTION -->
+    <div class="landing-section container bbb">
+        <div class="row justify-content-evenly align-content-center row-landing">
+            <div class="col-6 custom-col-6">
+                <div class="w-100 left-landing d-flex flex-column">
+                    <p class="landing-text lh-sm"><span class="w fs-3">Welcome!</span> <br>
+                        I'm Aljamer, your <br>
+                        go-to developer from <br><span class="blue">Zamboanga</span>.</p>
+                    <div class="buttons">
+                        <a class="button-1" href="#project">My works</a>
+                        <a class="button-2" href="#">HIRE ME!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 custom-col-6">
+                <div class="w-100 right-landing">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="d-flex justify-content-center mb-2">
+            <ion-icon class="svg-arrow" name="chevron-down"></ion-icon>
+        </a>
+    </div>
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+        <div class="container aboutme-section">
+            <p class="section-header">ABOUT ME</p>
+            <div class="row bbb orientation">
+                <div class="col-6 d-flex justify-content-center align-items-end">
+                    <div class="aboutme-pic">
+                        <img src="./images/aboutMe.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 custom-col-6">
+                    <h5 class="text-center montsrrat-bold">ABOUT ME</h5>
+                    <P class="montsrrat-light lh-lg text-center">Hi! I'm Aljamer Tajala, a passionate life-long learner
+                        eager to learn new programming skills. As a dynamic listener, I'm ready to take on technical
+                        challenges and grow in a collaborative environment. My enthusiasm for coding and innovation
+                        drives me to explore various programming languages and enhance my skills in algorithms and data
+                        structures. I'm committed to continuous learning and excited to contribute to the tech
+                        community.</P>
+                    <div class="d-flex justify-content-center">
+                        <a class="button-2 montsrrat pt-2 pb-2" href="./files/AljamerTajala-Task01.pdf"
+                            download="AljamerTajala.pdf">DOWNLOAD RESUME</a>
+                    </div>
+                    <p class="montsrrat text-center pt-2 shadow-b"><span class="w montsrrat">6 </span> Projects
+                        completed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+
+        <p class="section-header">MY SKILLS</p>
+        <div class="header-paragraph">
+            <P class="montsrrat-light lh-lg text-center col-md-10">I have a strong knowledge of a variety of
+                database management systems and web development frameworks. My skills are mainly based on debugging,
+                programming problem-solving, alt-text embedding, and code optimization both for performance and
+                scalability. I also know how to design and create software in a way that is highly effective, therefore
+                giving proper and maintainable code, and my area of expertise are:</P>
+        </div>
+        <div class="container pb-5 pt-3 bbw">
+            <div class="row row-cols-2 row-cols-lg-4">
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="HTML">
+                    <img src="./images/html.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="CSS">
+                    <img src="./images/css.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Javascript">
+                    <img src="./images/javascript.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Bootstrap">
+                    <img src="./images/bootstrap.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="PHP">
+                    <img src="./images/php.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Django">
+                    <img src="./images/django.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="GIT">
+                    <img src="./images/git.png" alt="programming-language">
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Github">
+                    <img src="./images/github.png" alt="programming-language">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <p class="section-header">MY PROJECTS</p>
+        <div class="header-paragraph">
+            <P class="montsrrat-light lh-lg text-center col-md-10">
+                I have used a variety of projects to demonstrate my full-stack development skills. I have experience
+                providing solid solutions that bring out my technical adaptability and originality in software
+                development and problem-solving.
+            </P>
+        </div>
+        <div class="container pb-5 pt-3 bbb">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col d-flex justify-content-center pt-3 pb-3">
+                    <div class="project-item">
+                        <img src="./images/p1.png" alt="project" class="w-100">
+                        <div class="overlay">
+                            <p class="overlay-text montsrrat-bold shadow-b m-0"> WMSUFlix (Netflix Clone)</p>
+                            <p class="montsrrat-light text-center pt-1 w">
+                                HTML, CSS, PHP, MYSQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3">
+                    <div class="project-item">
+                        <img src="./images/p2.png" alt="project2" class="w-100">
+                        <div class="overlay">
+                            <p class="overlay-text montsrrat-bold shadow-b m-0"> Plantopia (E-comerce)</p>
+                            <p class="montsrrat-light text-center pt-1 w">
+                                HTML, CSS, Bootstrap, PHP, MYSQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3">
+                    <div class="project-item">
+                        <img src="./images/p3.png" alt="project3" class="w-100">
+                        <div class="overlay">
+                            <p class="overlay-text montsrrat-bold shadow-b m-0"> Calculator</p>
+                            <p class="montsrrat-light text-center pt-1 w">
+                                HTML, CSS, Javascript
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3">
+                    <div class="project-item">
+                        <img src="./images/p4.png" alt="project4" class="w-100">
+                        <div class="overlay">
+                            <p class="overlay-text montsrrat-bold shadow-b m-0"> Clinicare (Optical Clinic Appointment
+                                System)</p>
+                            <p class="montsrrat-light text-center pt-1 w">
+                                HTML, CSS, Bootstrap, PHP, MYSQL, Javascript
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3">
+                    <div class="project-item">
+                        <img src="./images/p5.png" alt="project5" class="w-100">
+                        <div class="overlay">
+                            <p class="overlay-text montsrrat-bold shadow-b m-0"> WEb Blog</p>
+                            <p class="montsrrat-light text-center pt-1 w">
+                                HTML, CSS, Bootstrap, Javascript
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <p class="section-header">SERVICES</p>
+        <div class="header-paragraph">
+            <P class="montsrrat-light w lh-lg text-center col-md-10">
+                I offer a full range of services from design through to implementation, including full solutions to
+                concentrated technical assistance, depending on your needs. I am a dynamic listener prepared to overcome
+                technical challenges and perform well in a team environment.
+            </P>
+        </div>
+        <div class="container pb-5 pt-3 bbw">
+            <div class="row row-cols-1 row-cols-lg-3 justify-content-evenly">
+                <div class="col d-flex justify-content-center mt-2 mb-2 pt-3 pb-3 services">
+                    <a class="w fs-1 shadow-b"><ion-icon name="brush-outline"></ion-icon></a>
+                    <p class="w fs-6 bebas shadow-b m-0">WEB DESIGNING</p>
+                </div>
+                <div class="col d-flex justify-content-center mt-2 mb-2 pt-3 pb-3 services">
+                    <a class="w fs-1 shadow-b"><ion-icon name="earth-outline"></ion-icon></a>
+                    <p class="w fs-6 bebas shadow-b m-0">WEB DEVELOPING</p>
+                </div>
+                <div class="col d-flex justify-content-center mt-2 mb-2 pt-3 pb-3 services">
+                    <a class="w fs-1 shadow-b"><ion-icon name="git-compare-outline"></ion-icon></a>
+                    <p class="w fs-6 bebas shadow-b m-0">SOFTWARE DEVELOPING</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-3 justify-content-evenly mt-5">
+                <div class="col d-flex mt-2 mb-2 justify-content-center pt-3 pb-3 services-1">
+                    <a class="w fs-4 montsrrat-bold text-decoration-none shadow-b">6</a>
+                    <p class="w fs-6 bebas shadow-b m-0">COMPLETED PROJECTS</p>
+                </div>
+                <div class="col d-flex mt-2 mb-2 justify-content-center pt-3 pb-3 services-1">
+                    <a class="w fs-4 montsrrat-bold text-decoration-none shadow-b">2</a>
+                    <p class="w fs-6 bebas shadow-b m-0">HAPPY CLIENTS</p>
+                </div>
+                <div class="col d-flex mt-2 mb-2 justify-content-center pt-3 pb-3 services-1">
+                    <a class="w fs-4 montsrrat-bold text-decoration-none shadow-b">315+</a>
+                    <p class="w fs-6 bebas shadow-b m-0">COFFEE CONSUMED</p>
+                </div>
+            </div>
+            <p class="section-header pt-5 pb-5">I'm Open to <span class="b shadow-w-1"> Job </span> Opportunities</p>
+            <div class="header-paragraph">
+                <P class="montsrrat-light w lh-lg text-center col-md-10">
+                    I am passionate about coding and creativity, so I keep learning new programming languages and honing
+                    my abilities with data structures and algorithms. I'm excited to be able to contribute to the tech
+                    community and dedicated to lifelong learning.
+                </P>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="button-2 montsrrat pt-2 pb-2" href="#">HIRE ME</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-header">CONTACT ME</p>
+        <div class="header-paragraph">
+            <P class="montsrrat-light w lh-lg text-center col-md-10">
+                Feel free to drop a line in case of any question or opportunity. You can connect với me on my LinkedIn
+                or mail to <a class="w montsrrat text-decoration-none"
+                    href="mailto:aljamertajala22@gmail.com">aljamertajala22@gmail.com</a>.
+                I look forward to getting your message!
+            </P>
+        </div>
+        <div class="container pb-5 pt-3">
+            <div class="row row-cols-2 row-cols-lg-4 align-items-start">
+                <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                    <div class="contact-circle">
+                        <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+                    </div>
+                    <p class="w fs-5 bebas shadow-b m-0 pt-3">CONTACT #</p>
+                    <p class="montsrrat-light text-center fs-10 pt-2 w">+63 935 732 8948</p>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                    <div class="contact-circle">
+                        <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+                    </div>
+                    <p class="w fs-5 bebas shadow-b m-0 pt-3">ADDRESS</p>
+                    <p class="montsrrat-light text-start fs-10 pt-2 w">Fisheries Drive, Mampang, Zamboanga City,
+                        Zamboanga
+                        Del Sur, 7000</p>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                    <div class="contact-circle">
+                        <ion-icon class="contact-icon" name="send-outline"></ion-icon>
+                    </div>
+                    <p class="w fs-5 bebas shadow-b m-0 pt-3">EMAIL ADDRESS</p>
+                    <p class="montsrrat-light text-center fs-10 pt-2 w">aljamertajala22@gmail.com</p>
+                </div>
+                <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                    <div class="contact-circle">
+                        <ion-icon class="contact-icon" name="globe-outline"></ion-icon>
+                    </div>
+                    <p class="w fs-5 bebas shadow-b m-0 pt-3">WEBSITE</p>
+                    <p class="montsrrat-light text-center fs-10 pt-2 w"
+                        href="https://aljamer-22.github.io/aljamer-22.github.oi/">
+                        aljamer-22.github.io/aljamer-22.github.oi/</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-footer white-bg">
+        <div class="footer bbr-20">
+            <div class="container pt-3">
+                <div class="row row-cols-1 row-cols-lg-4 align-items-start">
+                    <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                        <p class="w fs-5 bebas shadow-b m-0 pt-3">About</p>
+                        <p class="montsrrat-light text-center pt-2 w">
+                            passionate life-long learner eager to learn new programming skills.
+                        </p>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                        <p class="w fs-5 bebas shadow-b m-0 pt-3">Links</p>
+                        <ul class="text-decoration-none w">
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Home
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                About
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Contact
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Skills
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Projects
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Services
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                        <p class="w fs-5 bebas shadow-b m-0 pt-3">Services</p>
+                        <ul class="text-decoration-none w">
+                            <li>
+                                <ion-icon class="pe-2 custom-fs-1" name="return-down-forward"></ion-icon>
+                                Software Development
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Web Design
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="return-down-forward"></ion-icon>
+                                Web Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-center pt-3 pb-3 flex-column align-items-center">
+                        <p class="w fs-5 bebas shadow-b m-0 pt-3">Have a Questions?</p>
+                        <ul class="text-decoration-none w">
+                            <li>
+                                <ion-icon class="pe-2" name="call-outline"></ion-icon>
+                                +63 935 732 8948
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2" name="send-outline"></ion-icon>
+                                aljamertajala22@gmail.com
+                            </li>
+                            <li>
+                                <ion-icon class="pe-2 custom-fs-2" name="location-outline"></ion-icon>
+                                Fisheries Drive, Mampang, Zamboanga City, Zamboanga Del Sur, 7000
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="white-bg d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center padding-30 foot">
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <a class="m-0 fs-3 b text-center social" href="https://web.facebook.com/aljamer.tajala"><ion-icon
+                                class="text-center" name="logo-facebook"></ion-icon></a>
+                        <p class="ms-2 text-center fs-3 "></p>
+                        <a class="ms-2 fs-3 b text-center social" href="https://www.instagram.com/eay_jay/"><ion-icon
+                                class="text-center" name="logo-instagram"></ion-icon></a>
+                        <p class="ms-2 text-center fs-3 "></p>
+                        <a class="ms-2 fs-3 b text-center social"
+                            href="https://www.linkedin.com/in/aljamer-hynson-tajala-b73549311/"><ion-icon
+                                class="text-center" name="logo-linkedin"></ion-icon></a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <h6 class="b montsrrat-bold m-0">© 2024 Aljamer. All rights
+                            reserved</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzMUNi6D7fEn1pI6w3GxO2Jp8BZgF3tvk5S7Lkp+Be4j"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script> <!-- Your custom script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
